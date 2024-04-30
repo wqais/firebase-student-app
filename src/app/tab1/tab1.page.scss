@@ -1,0 +1,49 @@
+/* Assuming you have a global CSS file */
+
+.content {
+    --background: #f0f2f5; /* Background color of the content */
+  }
+  
+  .header {
+    background-color: #007bff; /* Header background color */
+    color: white; /* Header text color */
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+  .info-main {
+    padding: 20px;
+  }
+  
+  .form {
+    background-color: white; /* Form background color */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow for form */
+  }
+  
+  .input-label {
+    color: #333; /* Input label color */
+    font-size: 1rem;
+    margin-bottom: 5px; /* Add margin below the label */
+    display: block; /* Ensure labels appear on separate lines */
+  }
+  
+  .input-field {
+    border: 1px solid #ccc; /* Input field border */
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: calc(100% - 22px);
+    color: #333;/* Adjust width to accommodate padding and border */
+  }
+  
+  .submit-btn {
+    background-color: #007bff; /* Submit button background color */
+    color: white; /* Submit button text color */
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%; /* Make the button full width */
+  }
+  

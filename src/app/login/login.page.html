@@ -1,0 +1,44 @@
+<ion-content>
+  <div class="container">
+    <div class="login-main">
+      <div class="header">
+        <div class="title">SPIT Portal</div>
+      </div>
+      <div id="login-form" class="form active">
+        <div class="title">Login</div>
+        <label for="">Email</label>
+        <input type="text" #email />
+        <label for="">Password</label>
+        <input type="password" #password />
+        <div class="btn" (click)="login(email.value, password.value)">
+          Login
+        </div>
+        <div class="links">
+          <span>Don't have a account? </span>
+          <span class="link" (click)="setActive('registeration-form')"
+            >Register</span
+          >
+        </div>
+      </div>
+      <div id="registeration-form" class="form">
+        <div class="title">Registration</div>
+        <label for="">Name</label>
+        <input type="text" #rname />
+        <label for="">Email</label>
+        <input type="text" #remail />
+        <label for="">Password</label>
+        <input type="password" #rpass />
+        <div
+          class="btn"
+          (click)="register(rname.value, remail.value, rpass.value)"
+        >
+          Register
+        </div>
+        <div class="links">
+          <span>Already have a account? </span>
+          <span class="link" (click)="setActive('login-form')">Login</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

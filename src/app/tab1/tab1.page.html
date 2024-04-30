@@ -1,0 +1,22 @@
+<ion-content [fullscreen]="true" class="content">
+  <div class="header">
+    <div class="title">SPIT Portal</div>
+  </div>
+  <div class="info-main">
+    <div class="form">
+      <ion-label class="input-label">Branch</ion-label>
+      <ion-input class="input-field" type="text" name="" id="" [(ngModel)]="user.data.branch"></ion-input>
+      
+      <ion-label class="input-label">Course</ion-label>
+      <ion-input class="input-field" type="text" name="" id="" [(ngModel)]="user.data.course"></ion-input>
+      
+      <ion-label class="input-label">CGPA</ion-label>
+      <ion-input class="input-field" type="text" name="" id="" [(ngModel)]="user.data.cgpa"></ion-input>
+      
+      <ion-label class="input-label">Skills</ion-label>
+      <ion-input class="input-field" type="text" name="" id="" [(ngModel)]="user.data.skills"></ion-input>
+      
+      <ion-button class="submit-btn" expand="block" (click)="updateUser()">Submit</ion-button>
+    </div>
+  </div>
+</ion-content>

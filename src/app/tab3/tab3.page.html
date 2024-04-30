@@ -1,0 +1,16 @@
+<ion-content [fullscreen]="true" class="content">
+  <div class="header">
+    <div class="title">Feedbacks</div>
+  </div>
+  <ion-list style="background-color: white;">
+    <div *ngFor="let feedback of feedbacks" style="background-color: white; margin-bottom: 1rem;">
+      <ion-label style="color: black;">
+        <p style="color: black; margin-left: 1rem; font-size: 1.1rem; padding: 2px 5px;"><b>Email: </b> {{ feedback.uid }}</p>
+        <p style="color: black; margin-left: 1rem; font-size: 1.1rem; padding: 2px 5px;"><b>Course Difficulty: </b> {{ feedback.difficulty }}</p>
+        <p style="color: black; margin-left: 1rem; font-size: 1.1rem; padding: 2px 5px;"><b>Concepts understood: </b> {{ feedback.questions_answered }}</p>
+        <p style="color: black; margin-left: 1rem; font-size: 1.1rem; padding: 2px 5px;"><b>Time Sufficiency: </b> {{ feedback.time_sufficiency }}</p>
+        <p style="color: black; margin-left: 1rem; font-size: 1.1rem; padding: 2px 5px;"><b>Suggestions: </b> {{ feedback.suggestions }}</p>
+      </ion-label>
+    </div>
+  </ion-list>
+</ion-content>
